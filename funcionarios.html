@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Funcionários</title>
+    <link rel="stylesheet" href="css/funcionarios.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>Funcionários</h2>
+            </div>
+            <ul class="menu">
+                <li><a onclick="novoCadastro()">Novo Cadastro</a></li>
+                <li><a onclick="excluirFuncionario()">Excluir</a></li>
+                <li><a onclick="consultarFuncionario()">Consultar</a></li>
+                <li><a href="painel.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <!-- Lista de Funcionários -->
+        <div class="content">
+            <h1>Lista Atualizada</h1>
+            <table id="tabela-funcionarios">
+                <thead>
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                        <th>Endereço</th>
+                        <th>CEP</th>
+                        <th>Data de Contratação</th>
+                        <th>Salário</th>
+                        <th>Benefícios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Funcionários serão adicionados aqui -->
+                </tbody>
+            </table>
+            
+            <button id="downloadExcel">Baixar Relatório (Excel)</button>
+        </div>
+    </div>
+
+   <!-- Modal para Novo Cadastro -->
+<div id="modal-cadastro" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <h2>Novo Cadastro</h2>
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" readonly>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome do Funcionário">
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento">
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" placeholder="Endereço">
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" placeholder="CEP" onblur="buscarCEP()">
+
+        <label for="dataContratacao">Data de Contratação:</label>
+        <input type="date" id="dataContratacao">
+
+        <label for="salario">Salário:</label>
+        <input type="number" id="salario" placeholder="Salário">
+
+        <label for="beneficios">Benefícios:</label>
+        <input type="text" id="beneficios" placeholder="Benefícios">
+
+        <button class="button-adicionar" onclick="adicionarFuncionario()">Adicionar</button>
+    </div>
+</div>
+
+        
+    </div>
+    
+</div>
+
+
+    </div>
+
+  
+
+
+    <script src="script-funcionarios.js"></script>
+</body>
+</html>

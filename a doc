@@ -1,0 +1,78 @@
+Descrição Geral do Projeto
+O projeto consiste em um Sistema de Gestão Administrativo que permite o gerenciamento de usuários, funcionários e dados financeiros. O sistema é composto por várias páginas HTML, estilizadas com CSS e funcionalidades implementadas em JavaScript. Abaixo está uma descrição detalhada de cada componente e suas funções.
+
+Estrutura do Projeto
+Páginas HTML
+index.html
+
+Função: Página inicial de login e cadastro de usuários.
+Descrição: Permite que os usuários façam login ou se cadastrem no sistema. A validação é feita via JavaScript, e os dados são armazenados no localStorage.
+painel.html
+
+Função: Página principal do painel administrativo.
+Descrição: Oferece acesso a diferentes seções do sistema, como Dashboard, Financeiro, Funcionários, Relatórios e Configurações. Inclui um menu lateral que pode ser recolhido.
+dashboard.html
+
+Função: Exibe gráficos de dados financeiros.
+Descrição: Apresenta gráficos interativos (usando Chart.js) para Contas a Pagar, Folha Salarial e Lançamento de Recurso.
+funcionarios.html
+
+Função: Gerenciamento de funcionários.
+Descrição: Permite adicionar, excluir e consultar funcionários. Os dados são armazenados em um array e exibidos em uma tabela. Também oferece a opção de baixar um relatório em formato CSV.
+Arquivos CSS
+style.css
+
+Função: Estilização geral do painel administrativo.
+Descrição: Define o layout, cores e responsividade do painel, incluindo o menu lateral e o conteúdo principal.
+login.css
+
+Função: Estilização da página de login e cadastro.
+Descrição: Define o layout e o design dos formulários de login e cadastro.
+funcionarios.css
+
+Função: Estilização da página de gerenciamento de funcionários.
+Descrição: Define o layout da tabela de funcionários e do modal de cadastro.
+dashboard.css
+
+Função: Estilização da página de dashboard.
+Descrição: Define o layout dos gráficos e a organização das seções.
+Arquivos JavaScript
+script.js
+
+Função: Lógica de login, cadastro e controle do menu lateral.
+Descrição:
+Gerencia a alternância entre as telas de login e cadastro.
+Valida os dados de login e cadastro, armazenando os usuários no localStorage.
+Controla a exibição do menu lateral no painel administrativo.
+script-dashboard.js
+
+Função: Lógica dos gráficos na página de dashboard.
+Descrição:
+Cria gráficos interativos usando a biblioteca Chart.js para exibir dados financeiros.
+Permite alternar entre diferentes seções (Contas a Pagar, Folha Salarial, Lançamento de Recurso).
+script-funcionarios.js
+
+Função: Lógica de gerenciamento de funcionários.
+
+Descrição:
+Permite adicionar, excluir e consultar funcionários.
+Gera matrículas automáticas e atualiza a tabela de funcionários.
+Oferece a funcionalidade de baixar um relatório em formato CSV.
+Funcionalidades 
+
+Autenticação de Usuários: Login e cadastro com validação de dados.
+Gerenciamento de Funcionários: Adição, exclusão e consulta de funcionários com geração automática de matrículas.
+Dashboard Financeiro: Visualização de dados financeiros através de gráficos interativos.
+
+Menu Lateral Recolhível: Menu que pode ser expandido ou recolhido para melhorar a usabilidade.
+Relatórios em CSV: Exportação de dados de funcionários para um arquivo CSV.
+
+Tecnologias Utilizadas
+HTML: Estrutura das páginas.
+CSS: Estilização e design responsivo.
+JavaScript: Lógica e interatividade.
+Chart.js: Biblioteca para criação de gráficos.
+**localStorage - JavaScript: Armazenamento de dados do usuário e funcionários.
+
+Considerações Finais
+Este sistema de gestão administrativo é uma solução prática para pequenas e médias empresas que buscam organizar suas operações de forma eficiente. A interface amigável e as funcionalidades robustas garantem uma experiência de usuário satisfatória, permitindo que os administradores gerenciem informações cruciais com facilidade.
